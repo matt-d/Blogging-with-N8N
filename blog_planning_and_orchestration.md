@@ -29,12 +29,12 @@ TARGET_AUDIENCE: "tech enthusiast"
 ```json
 {
   "blog_topic": "[USER_TOPIC]",
-  "blog_style": "[STYLE_REQUIREMENTS]",
-  "chapter_count": "[NUMBER]",
-  "target_word_count": "[NUMBER]",
-  "current_date": "[DATE]",
+  "blog_style": "{{ BLOG_STYLE }}",
+  "chapter_count": "{{ CHAPTER_COUNT }}",
+  "target_word_count": "{{ TARGET_WORD_COUNT }}",
+  "current_date": "{{ CURRENT_DATE }}",
   "user_requirements": "[ADDITIONAL_CONTEXT]",
-  "target_audience": "[TARGET_AUDIENCE]"
+  "target_audience": "{{ TARGET_AUDIENCE }}"
 }
 ```
 **Expected Return**: Table of contents and research insights
@@ -57,15 +57,15 @@ TARGET_AUDIENCE: "tech enthusiast"
 {
   "table_of_contents": "[APPROVED_TOC]",
   "blog_topic": "[USER_TOPIC]",
-  "blog_style": "[STYLE_REQUIREMENTS]",
-  "chapter_count": "[NUMBER]",
-  "target_word_count": "[NUMBER]",
-  "current_date": "[DATE]",
+  "blog_style": "{{ BLOG_STYLE }}",
+  "chapter_count": "{{ CHAPTER_COUNT }}",
+  "target_word_count": "{{ TARGET_WORD_COUNT }}",
+  "current_date": "{{ CURRENT_DATE }}",
   "seo_keywords": "[KEYWORD_LIST]",
   "research_insights": "[RESEARCH_SUMMARY]",
   "source_research": "[RESEARCH_FINDINGS]",
-  "additional_context": "[USER_REQUIREMENTS]",
-  "target_audience": "[TARGET_AUDIENCE]"
+  "user_requirements": "[ADDITIONAL_CONTEXT]",
+  "target_audience": "{{ TARGET_AUDIENCE }}"
 }
 ```
 **Expected Return**: Complete blog draft
@@ -79,16 +79,16 @@ TARGET_AUDIENCE: "tech enthusiast"
   "blog_draft": "[COMPLETE_DRAFT_FROM_CONTENT_GENERATOR]",
   "table_of_contents": "[APPROVED_TOC]",
   "blog_topic": "[USER_TOPIC]",
-  "target_audience": "[TARGET_AUDIENCE]",
-  "blog_style": "[STYLE_REQUIREMENTS]",
-  "chapter_count": "[NUMBER]",
-  "target_word_count": "[NUMBER]",
-  "current_date": "[DATE]",
+  "target_audience": "{{ TARGET_AUDIENCE }}",
+  "blog_style": "{{ BLOG_STYLE }}",
+  "chapter_count": "{{ CHAPTER_COUNT }}",
+  "target_word_count": "{{ TARGET_WORD_COUNT }}",
+  "current_date": "{{ CURRENT_DATE }}",
   "seo_keywords": "[KEYWORD_LIST]",
   "word_count": "[ACTUAL_COUNT]",
   "external_citations": "[COUNT]",
   "internal_links": "[COUNT]",
-  "research_date": "[DATE]",
+  "research_date": "[RESEARCH_EXECUTION_DATE]",
   "style_compliance": "verified",
   "quality_notes": "[ANY_IMPORTANT_NOTES_FOR_EDITOR]"
 }
@@ -104,10 +104,10 @@ TARGET_AUDIENCE: "tech enthusiast"
   "seo_optimized_content": "[SEO_OPTIMIZED_CONTENT_FROM_SEO_AGENT]",
   "seo_analysis": "[SEO_ANALYSIS_REPORT]",
   "table_of_contents": "[APPROVED_TOC]",
-  "blog_style": "[STYLE_REQUIREMENTS]",
-  "chapter_count": "[NUMBER]",
-  "target_word_count": "[NUMBER]",
-  "current_date": "[DATE]",
+  "blog_style": "{{ BLOG_STYLE }}",
+  "chapter_count": "{{ CHAPTER_COUNT }}",
+  "target_word_count": "{{ TARGET_WORD_COUNT }}",
+  "current_date": "{{ CURRENT_DATE }}",
   "keyword_strategy": "[PRIMARY_AND_SECONDARY_KEYWORDS]",
   "optimization_score": "[SEO_SCORES]",
   "recommendations": "[IMPLEMENTATION_NOTES]",
@@ -129,10 +129,10 @@ TARGET_AUDIENCE: "tech enthusiast"
 {
   "final_draft": "[USER_APPROVED_CONTENT]",
   "table_of_contents": "[APPROVED_TOC]",
-  "blog_style": "[STYLE_REQUIREMENTS]",
-  "target_word_count": "[NUMBER]",
-  "chapter_count": "[NUMBER]",
-  "current_date": "[DATE]"
+  "blog_style": "{{ BLOG_STYLE }}",
+  "target_word_count": "{{ TARGET_WORD_COUNT }}",
+  "chapter_count": "{{ CHAPTER_COUNT }}",
+  "current_date": "{{ CURRENT_DATE }}"
 }
 ```
 **Expected Return**: Complete HTML document with SEO meta tags, schema markup, and publication-ready formatting
