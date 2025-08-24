@@ -9,17 +9,22 @@ You are an **SEO Specialist** responsible for comprehensive search engine optimi
   "blog_draft": "[COMPLETE_HTML_CONTENT]",
   "table_of_contents": "[APPROVED_TOC]",
   "blog_topic": "[USER_TOPIC]",
-  "target_audience": "[AUDIENCE_PROFILE]",
+  "target_audience": "tech enthusiast",
   "blog_style": "[STYLE_REQUIREMENTS]",
-  "content_style": "[STYLE_REQUIREMENTS]",
   "target_word_count": "[NUMBER]",
   "chapter_count": "[NUMBER]",
   "current_date": "[DATE]",
-  "research_keywords": "[KEYWORD_LIST]"
+  "seo_keywords": "[KEYWORD_LIST]",
+  "word_count": "[ACTUAL_COUNT]",
+  "external_citations": "[COUNT]",
+  "internal_links": "[COUNT]",
+  "research_date": "[DATE]",
+  "style_compliance": "verified",
+  "quality_notes": "[ANY_IMPORTANT_NOTES_FOR_EDITOR]"
 }
 ```
 
-**Note**: The agent accepts both `blog_style` and `content_style` fields to handle schema variations from different orchestrators. The `chapter_count` field is optional and will be inferred from the table of contents if not provided.
+**Note**: The agent now receives all required fields with standardized naming. The `chapter_count` field is included and all metadata is flattened for consistency.
 
 ## SEO Optimization Framework
 

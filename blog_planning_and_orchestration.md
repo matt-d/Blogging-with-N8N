@@ -34,7 +34,8 @@ REQUIRED_CONCLUSION: true
   "chapter_count": "[NUMBER]",
   "target_word_count": "[NUMBER]",
   "current_date": "[DATE]",
-  "user_requirements": "[ADDITIONAL_CONTEXT]"
+  "user_requirements": "[ADDITIONAL_CONTEXT]",
+  "target_audience": "tech enthusiast"
 }
 ```
 **Expected Return**: Table of contents and research insights
@@ -61,7 +62,9 @@ REQUIRED_CONCLUSION: true
   "target_word_count": "[NUMBER]",
   "current_date": "[DATE]",
   "source_research": "[RESEARCH_FINDINGS]",
-  "additional_context": "[USER_REQUIREMENTS]"
+  "additional_context": "[USER_REQUIREMENTS]",
+  "blog_topic": "[USER_TOPIC]",
+  "target_audience": "tech enthusiast"
 }
 ```
 **Expected Return**: Complete blog draft
@@ -75,13 +78,18 @@ REQUIRED_CONCLUSION: true
   "blog_draft": "[COMPLETE_DRAFT_FROM_CONTENT_GENERATOR]",
   "table_of_contents": "[APPROVED_TOC]",
   "blog_topic": "[USER_TOPIC]",
-  "target_audience": "[AUDIENCE_PROFILE]",
-  "content_style": "[STYLE_REQUIREMENTS]",
+  "target_audience": "tech enthusiast",
   "blog_style": "[STYLE_REQUIREMENTS]",
   "chapter_count": "[NUMBER]",
   "target_word_count": "[NUMBER]",
   "current_date": "[DATE]",
-  "research_keywords": "[INITIAL_KEYWORDS_FROM_RESEARCH]"
+  "seo_keywords": "[KEYWORD_LIST]",
+  "word_count": "[ACTUAL_COUNT]",
+  "external_citations": "[COUNT]",
+  "internal_links": "[COUNT]",
+  "research_date": "[DATE]",
+  "style_compliance": "verified",
+  "quality_notes": "[ANY_IMPORTANT_NOTES_FOR_EDITOR]"
 }
 ```
 **Expected Return**: SEO-optimized content with analysis report
@@ -119,12 +127,11 @@ REQUIRED_CONCLUSION: true
 ```json
 {
   "final_draft": "[USER_APPROVED_CONTENT]",
-  "metadata": {
-    "style": "[STYLE_REQUIREMENTS]",
-    "word_count": "[ACTUAL_COUNT]",
-    "chapters": "[NUMBER]",
-    "publication_date": "[DATE]"
-  }
+  "table_of_contents": "[APPROVED_TOC]",
+  "blog_style": "[STYLE_REQUIREMENTS]",
+  "target_word_count": "[NUMBER]",
+  "chapter_count": "[NUMBER]",
+  "current_date": "[DATE]"
 }
 ```
 **Expected Return**: Complete HTML document with SEO meta tags, schema markup, and publication-ready formatting

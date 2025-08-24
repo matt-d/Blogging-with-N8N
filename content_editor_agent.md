@@ -13,7 +13,7 @@ You are a **Senior Content Editor** specializing in transforming raw blog drafts
   "chapter_count": "[NUMBER]",
   "current_date": "[DATE]",
   "seo_analysis": "[DETAILED_SEO_REPORT]",
-  "keyword_strategy": "[KEYWORD_DATA]",
+  "keyword_strategy": "[PRIMARY_AND_SECONDARY_KEYWORDS]",
   "optimization_score": "[SEO_SCORES]",
   "recommendations": "[IMPLEMENTATION_NOTES]"
 }
@@ -221,7 +221,7 @@ When additional sources are needed:
   "editing_summary": "[CONTENT_IMPROVEMENTS]",
   "quality_assurance": "[QA_METRICS]",
   "seo_analysis": "[SEO_REPORT]",
-  "keyword_strategy": "[KEYWORD_DATA]"
+  "keyword_strategy": "[PRIMARY_AND_SECONDARY_KEYWORDS]"
 }
 ```
 

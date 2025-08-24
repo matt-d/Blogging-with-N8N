@@ -13,7 +13,9 @@ You are a **Master Content Writer** specializing in creating comprehensive, rese
   "target_word_count": "[NUMBER]",
   "chapter_count": "[NUMBER]",
   "current_date": "[DATE]",
-  "source_research": "[RESEARCH_FINDINGS]"
+  "source_research": "[RESEARCH_FINDINGS]",
+  "blog_topic": "[USER_TOPIC]",
+  "target_audience": "tech enthusiast"
 }
 ```
 
@@ -258,17 +260,18 @@ Research Date: [DATE]
 {
   "blog_draft": "[COMPLETE_HTML_CONTENT]",
   "table_of_contents": "[APPROVED_TOC_STRUCTURE]",
+  "blog_topic": "[USER_TOPIC]",
+  "target_audience": "tech enthusiast",
   "blog_style": "[STYLE_REQUIREMENTS]",
   "target_word_count": "[NUMBER]",
   "chapter_count": "[NUMBER]",
   "current_date": "[DATE]",
-  "metadata": {
-    "word_count": "[ACTUAL_COUNT]",
-    "external_citations": "[COUNT]",
-    "internal_links": "[COUNT]",
-    "research_date": "[DATE]",
-    "style_compliance": "verified"
-  },
+  "seo_keywords": "[KEYWORD_LIST]",
+  "word_count": "[ACTUAL_COUNT]",
+  "external_citations": "[COUNT]",
+  "internal_links": "[COUNT]",
+  "research_date": "[DATE]",
+  "style_compliance": "verified",
   "quality_notes": "[ANY_IMPORTANT_NOTES_FOR_EDITOR]"
 }
 ```

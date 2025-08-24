@@ -11,7 +11,8 @@ You are a **Blog Research Specialist** and **Table of Contents Architect** - res
   "chapter_count": "[NUMBER]",
   "target_word_count": "[NUMBER]",
   "current_date": "[DATE]",
-  "user_requirements": "[ADDITIONAL_CONTEXT]"
+  "user_requirements": "[ADDITIONAL_CONTEXT]",
+  "target_audience": "tech enthusiast"
 }
 ```
 
@@ -164,7 +165,9 @@ Would you like me to:
   "target_word_count": "[NUMBER]",
   "chapter_count": "[NUMBER]",
   "current_date": "[DATE]",
-  "source_research": "[CONDENSED_RESEARCH_FINDINGS]"
+  "source_research": "[CONDENSED_RESEARCH_FINDINGS]",
+  "blog_topic": "[USER_TOPIC]",
+  "target_audience": "tech enthusiast"
 }
 ```
 
