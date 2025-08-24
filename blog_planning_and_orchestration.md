@@ -51,7 +51,7 @@ TARGET_AUDIENCE: "tech enthusiast"
 
 ### Phase 3: Content Generation
 **Trigger**: Only after TOC approval
-**Agent**: Content Generator
+**Agent**: Blog Content Generation Agent
 **Payload to send**:
 ```json
 {
@@ -72,7 +72,7 @@ TARGET_AUDIENCE: "tech enthusiast"
 
 ### Phase 4: SEO Optimization
 **Trigger**: After Content Generator completion
-**Agent**: SEO Optimizer
+**Agent**: SEO Optimizer Agent
 **Payload to send**:
 ```json
 {
@@ -97,7 +97,7 @@ TARGET_AUDIENCE: "tech enthusiast"
 
 ### Phase 5: Content Editing
 **Trigger**: After SEO Optimizer completion
-**Agent**: Content Editor
+**Agent**: Blog Content Editor Agent
 **Critical Payload** (ALL fields mandatory):
 ```json
 {
@@ -123,7 +123,7 @@ TARGET_AUDIENCE: "tech enthusiast"
 
 ### Phase 7: HTML Publication
 **Trigger**: Only after user approval
-**Agent**: HTML Publisher
+**Agent**: Blog HTML Publisher Agent
 **Payload**:
 ```json
 {
@@ -149,10 +149,10 @@ TARGET_AUDIENCE: "tech enthusiast"
 **CRITICAL**: Ensure all payloads match expected schemas exactly:
 
 - **Phase 1 → Research Agent**: Must include all 7 required fields
-- **Phase 3 → Content Generator**: Must include all 11 required fields  
-- **Phase 4 → SEO Optimizer**: Must include all 15 required fields
-- **Phase 5 → Content Editor**: Must include all 11 required fields
-- **Phase 7 → Publisher**: Must include all 6 required fields
+- **Phase 3 → Blog Content Generation Agent**: Must include all 11 required fields  
+- **Phase 4 → SEO Optimizer Agent**: Must include all 15 required fields
+- **Phase 5 → Blog Content Editor Agent**: Must include all 11 required fields
+- **Phase 7 → Blog HTML Publisher Agent**: Must include all 6 required fields
 
 **Common Schema Errors**:
 - Missing required fields
@@ -165,9 +165,9 @@ TARGET_AUDIENCE: "tech enthusiast"
 
 **Agents with Brave Search Requirements:**
 - **Research Agent**: 2-second delays between research phases
-- **Content Generator**: 2-second delays between section research
-- **SEO Optimizer**: 2-second delays between keyword research phases
-- **Content Editor**: 2-second delays when researching additional sources
+- **Blog Content Generation Agent**: 2-second delays between section research
+- **SEO Optimizer Agent**: 2-second delays between keyword research phases
+- **Blog Content Editor Agent**: 2-second delays when researching additional sources
 
 **Delay Enforcement:**
 - Minimum 2 seconds between any Brave Search requests
@@ -182,8 +182,8 @@ TARGET_AUDIENCE: "tech enthusiast"
 - Keep all metadata throughout workflow
 
 ### Failure Recovery:
-- If SEO Optimizer doesn't receive data: Re-send with explicit field mapping
-- If Content Editor doesn't receive SEO data: Re-send with explicit field mapping
+- If SEO Optimizer Agent doesn't receive data: Re-send with explicit field mapping
+- If Blog Content Editor Agent doesn't receive SEO data: Re-send with explicit field mapping
 - If any agent fails: Request clarification from user and retry
 - Log all inter-agent communications for troubleshooting
 
@@ -233,9 +233,9 @@ Please return the SEO-optimized edited final draft.
 - [ ] HTML Publisher generates complete HTML document with proper meta tags and structure
 
 ## Troubleshooting Notes
-- **If SEO Optimizer doesn't respond**: Check if blog draft and topic data are populated
-- **If Content Editor doesn't respond**: Check if all SEO payload fields are populated, including keyword strategy
-- **If HTML Publisher fails**: Verify final_draft contains valid HTML content
+- **If SEO Optimizer Agent doesn't respond**: Check if blog draft and topic data are populated
+- **If Blog Content Editor Agent doesn't respond**: Check if all SEO payload fields are populated, including keyword strategy
+- **If Blog HTML Publisher Agent fails**: Verify final_draft contains valid HTML content
 - **If data seems missing**: Verify variable substitution is working ({{ $today }})
 - **If agents seem confused**: Ensure context includes DEFAULT values and SEO requirements explicitly
 
