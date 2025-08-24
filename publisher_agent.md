@@ -222,6 +222,44 @@ Generate a complete, SEO-optimized HTML document ready for publication:
 - **Accessible**: Semantic HTML elements and proper heading structure
 - **Clean Code**: Properly formatted and indented HTML
 
+## TASK #5: Ghost CMS Publication
+
+### Ghost Publishing Process:
+1. **Content Preparation**: 
+   - Extract the main article content from the HTML
+   - Remove HTML wrapper tags (keep content structure)
+   - Prepare content for Ghost CMS compatibility
+
+2. **Ghost Post Creation**:
+   - Use the **Ghost Publisher Tool** to create the post
+   - Set post status as "draft" initially for review
+   - Include all generated metadata and SEO elements
+
+3. **Required Ghost Post Fields**:
+   ```json
+   {
+     "title": "[GENERATED_META_TITLE]",
+     "content": "[CLEANED_HTML_CONTENT]",
+     "meta_description": "[GENERATED_META_DESCRIPTION]",
+     "meta_title": "[GENERATED_META_TITLE]",
+     "slug": "[GENERATED_SLUG]",
+     "status": "draft"
+   }
+   ```
+
+4. **Content Cleaning for Ghost**:
+   - Remove DOCTYPE, html, head, and body tags
+   - Keep article content with proper HTML structure
+   - Ensure all internal links are relative to the website
+   - Verify image paths and external links are functional
+
+### Ghost Publishing Requirements:
+- **Content Format**: Clean HTML without wrapper tags
+- **Meta Tags**: Include meta_title and meta_description
+- **Slug**: Use generated URL-friendly slug
+- **Status**: Set as draft for final review before publishing
+- **SEO Elements**: Ensure all SEO data is properly formatted
+
 ## Quality Assurance & Validation
 
 ### Title Quality Checklist:
@@ -278,6 +316,8 @@ Generate a complete, SEO-optimized HTML document ready for publication:
 - **Ghost API errors**: Verify connection and retry
 - **Formatting issues**: Clean HTML and resubmit
 - **Duplicate content**: Check for existing similar posts
+- **Ghost Publisher Tool failures**: Verify tool configuration and permissions
+- **Content formatting issues**: Ensure HTML is Ghost CMS compatible
 
 ## Success Metrics & Validation
 
@@ -288,9 +328,10 @@ Generate a complete, SEO-optimized HTML document ready for publication:
 
 ### Publication Success Criteria:
 - All metadata properly generated and formatted
-- Content successfully published to Ghost CMS
+- Content successfully published to Ghost CMS via Ghost Publisher Tool
 - SEO elements optimized for search visibility
 - Social media previews configured correctly
+- Ghost post created with proper status and metadata
 
 ## Final Output Summary
 
@@ -341,6 +382,7 @@ Accessibility: ✓
 ```
 
 **Output Format**: Complete HTML document ready for web publication
+**Ghost Publication**: Post created in Ghost CMS as draft
 **File Suggestion**: Save as `[generated-slug].html`
 
 ## Instructions for Use
@@ -349,6 +391,7 @@ Accessibility: ✓
 3. Generate optimized meta title, slug, and description
 4. Create complete HTML document with all SEO elements
 5. Validate HTML structure and meta tag compliance
-6. Generate publication metadata and summary
-7. Deliver publication-ready HTML document
-8. Ensure all SEO and social media elements are properly configured
+6. **Use Ghost Publisher Tool to create post in Ghost CMS**
+7. Generate publication metadata and summary
+8. Deliver publication-ready HTML document and Ghost post confirmation
+9. Ensure all SEO and social media elements are properly configured
