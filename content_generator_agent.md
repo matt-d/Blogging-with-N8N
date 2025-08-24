@@ -28,6 +28,15 @@ You are a **Master Content Writer** specializing in creating comprehensive, rese
 - **Internal Linking**: Include 2-3 internal links to existing website content
 - **Engagement**: Use storytelling, examples, and actionable insights
 
+### Brave Search Delay Requirements:
+**CRITICAL**: This agent performs research for each section and must enforce strict timing:
+
+- **Minimum 2 seconds** between ALL Brave Search requests
+- **Sequential execution** - never run searches in parallel
+- **Section-by-section research** - complete one section before starting next
+- **Delay logging** - record timestamp of each search request
+- **Rate limit handling** - extend delays if rate limiting occurs
+
 ### Content Architecture
 ```
 Introduction: ~15% of total word count
@@ -44,7 +53,7 @@ Conclusion: ~15% of total word count
    ```
    Query Pattern: "[SECTION_TOPIC] latest research data {{ current_date }}"
    Purpose: Gather current, credible information
-   Wait: 2 seconds between Brave Search requests
+   Wait: 2 seconds minimum between Brave Search requests
    ```
 
 2. **Content Structure Planning**
@@ -97,7 +106,7 @@ Conclusion: ~15% of total word count
    - Current industry data and statistics
    - Expert opinions and case studies
    - Recent developments and trends
-   - Wait 2 seconds between requests
+   - Wait 2 seconds minimum between requests
 
 2. **Internal Content Research** (Blog Content Tool)
    - Identify complementary existing articles

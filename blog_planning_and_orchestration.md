@@ -144,6 +144,21 @@ REQUIRED_CONCLUSION: true
 3. **Confirm agent availability**
 4. **Log data transfer for debugging**
 
+### Brave Search Delay Requirements:
+**CRITICAL**: All agents using Brave Search must wait **minimum 2 seconds** between requests to avoid rate limiting and ensure reliable results.
+
+**Agents with Brave Search Requirements:**
+- **Research Agent**: 2-second delays between research phases
+- **Content Generator**: 2-second delays between section research
+- **SEO Optimizer**: 2-second delays between keyword research phases
+- **Content Editor**: 2-second delays when researching additional sources
+
+**Delay Enforcement:**
+- Minimum 2 seconds between any Brave Search requests
+- Extend delays if rate limiting occurs
+- Log all search requests with timestamps
+- Retry failed requests with increased delays
+
 ### Data Persistence:
 - Store TOC after approval
 - Preserve blog draft from Content Generator
