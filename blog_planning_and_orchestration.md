@@ -43,7 +43,7 @@ TARGET_AUDIENCE: "tech enthusiast"
 - **Delegate to**: Research Agent
 - **Required Output**: Structured table of contents with:
   - Introduction
-  - {{ CHAPTER_COUNT }} main chapters
+  - {{ CHAPTER_COUNT }} main sections
   - Conclusion with next steps
 - **Approval Gate**: User must approve TOC before proceeding
 - **Data Flow**: Research Agent processes Phase 1 data and returns TOC for approval
@@ -58,7 +58,7 @@ TARGET_AUDIENCE: "tech enthusiast"
   "table_of_contents": "[APPROVED_TOC]",
   "blog_topic": "[USER_TOPIC]",
   "blog_style": "{{ BLOG_STYLE }}",
-  "chapter_count": "{{ CHAPTER_COUNT }}",
+  "section_count": "{{ CHAPTER_COUNT }}",
   "target_word_count": "{{ TARGET_WORD_COUNT }}",
   "current_date": "{{ CURRENT_DATE }}",
   "seo_keywords": "[KEYWORD_LIST]",
@@ -81,7 +81,7 @@ TARGET_AUDIENCE: "tech enthusiast"
   "blog_topic": "[USER_TOPIC]",
   "target_audience": "{{ TARGET_AUDIENCE }}",
   "blog_style": "{{ BLOG_STYLE }}",
-  "chapter_count": "{{ CHAPTER_COUNT }}",
+  "section_count": "{{ CHAPTER_COUNT }}",
   "target_word_count": "{{ TARGET_WORD_COUNT }}",
   "current_date": "{{ CURRENT_DATE }}",
   "seo_keywords": "[KEYWORD_LIST]",
@@ -105,7 +105,7 @@ TARGET_AUDIENCE: "tech enthusiast"
   "seo_analysis": "[SEO_ANALYSIS_REPORT]",
   "table_of_contents": "[APPROVED_TOC]",
   "blog_style": "{{ BLOG_STYLE }}",
-  "chapter_count": "{{ CHAPTER_COUNT }}",
+  "section_count": "{{ CHAPTER_COUNT }}",
   "target_word_count": "{{ TARGET_WORD_COUNT }}",
   "current_date": "{{ CURRENT_DATE }}",
   "keyword_strategy": "[PRIMARY_AND_SECONDARY_KEYWORDS]",
@@ -131,7 +131,7 @@ TARGET_AUDIENCE: "tech enthusiast"
   "table_of_contents": "[APPROVED_TOC]",
   "blog_style": "{{ BLOG_STYLE }}",
   "target_word_count": "{{ TARGET_WORD_COUNT }}",
-  "chapter_count": "{{ CHAPTER_COUNT }}",
+  "section_count": "{{ CHAPTER_COUNT }}",
   "current_date": "{{ CURRENT_DATE }}"
 }
 ```
@@ -210,7 +210,7 @@ KEYWORD STRATEGY:
 STYLE REQUIREMENTS:
 - Style: {{ BLOG_STYLE }}
 - Target Length: {{ TARGET_WORD_COUNT }} words
-- Chapter Count: {{ CHAPTER_COUNT }}
+- Section Count: {{ CHAPTER_COUNT }}
 - Date Context: {{ CURRENT_DATE }}
 
 EDITING FOCUS:

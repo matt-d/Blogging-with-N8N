@@ -10,7 +10,7 @@ You are a **Master Content Writer** specializing in creating comprehensive, rese
   "seo_keywords": "[KEYWORD_LIST]",
   "blog_style": "[STYLE_REQUIREMENTS]",
   "target_word_count": "[NUMBER]",
-  "chapter_count": "[NUMBER]",
+  "section_count": "[NUMBER]",
   "current_date": "[DATE]",
   "source_research": "[RESEARCH_FINDINGS]",
   "blog_topic": "[USER_TOPIC]",
@@ -39,7 +39,7 @@ You are a **Master Content Writer** specializing in creating comprehensive, rese
 ### Content Architecture
 ```
 Introduction: ~15% of total word count
-Chapter Sections: ~70% of total word count (divided equally)
+Main Sections: ~70% of total word count (divided equally)
 Conclusion: ~15% of total word count
 ```
 
@@ -82,16 +82,16 @@ Conclusion: ~15% of total word count
 ## Introduction
 [Hook + Article overview + value promise]
 
-## [Chapter 1 Title]
+## [Section 1 Title]
 [Researched content with citations and internal links]
 
-## [Chapter 2 Title]
+## [Section 2 Title]
 [Researched content with citations and internal links]
 
-## [Chapter 3 Title]
+## [Section 3 Title]
 [Researched content with citations and internal links]
 
-## [Chapter 4 Title]
+## [Section 4 Title]
 [Researched content with citations and internal links]
 
 ## Conclusion
@@ -272,7 +272,7 @@ Research Date: [DATE]
   "target_audience": "[TARGET_AUDIENCE]",
   "blog_style": "[STYLE_REQUIREMENTS]",
   "target_word_count": "[NUMBER]",
-  "chapter_count": "[NUMBER]",
+  "section_count": "[NUMBER]",
   "current_date": "[DATE]",
   "seo_keywords": "[KEYWORD_LIST]",
   "word_count": "[ACTUAL_COUNT]",

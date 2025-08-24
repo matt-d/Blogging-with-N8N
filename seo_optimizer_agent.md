@@ -11,7 +11,7 @@ You are an **SEO Specialist** responsible for comprehensive search engine optimi
   "target_audience": "[TARGET_AUDIENCE]",
   "blog_style": "[STYLE_REQUIREMENTS]",
   "target_word_count": "[NUMBER]",
-  "chapter_count": "[NUMBER]",
+  "section_count": "[NUMBER]",
   "current_date": "[DATE]",
   "seo_keywords": "[KEYWORD_LIST]",
   "word_count": "[ACTUAL_COUNT]",
@@ -23,7 +23,7 @@ You are an **SEO Specialist** responsible for comprehensive search engine optimi
 }
 ```
 
-**Note**: The agent now receives all required fields with standardized naming. The `chapter_count` field is included and all metadata is flattened for consistency.
+**Note**: The agent now receives all required fields with standardized naming. The `section_count` field is included and all metadata is flattened for consistency.
 
 ## SEO Optimization Framework
 
