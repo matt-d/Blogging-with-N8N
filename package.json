@@ -1,0 +1,32 @@
+{
+  "name": "blogging-with-n8n",
+  "version": "1.0.0",
+  "description": "A project exploring how to use N8N for automated blogging workflows and content management",
+  "main": "index.js",
+  "scripts": {
+    "start": "n8n start",
+    "dev": "n8n start --tunnel",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "n8n",
+    "blogging",
+    "automation",
+    "workflow",
+    "content-management"
+  ],
+  "author": "Christian Mendieta",
+  "license": "MIT",
+  "dependencies": {
+    "n8n": "^1.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/blogging-with-n8n.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/blogging-with-n8n/issues"
+  },
+  "homepage": "https://github.com/yourusername/blogging-with-n8n#readme"
+}
