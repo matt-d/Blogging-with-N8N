@@ -160,10 +160,10 @@ Would you like me to:
   "table_of_contents": "[APPROVED_TOC_MARKDOWN]",
   "research_insights": "[RESEARCH_SUMMARY]",
   "seo_keywords": "[KEYWORD_LIST]",
-  "content_style": "{{ blog_style }}",
-  "target_word_count": {{ target_word_count }},
-  "chapter_count": {{ chapter_count }},
-  "current_date": "{{ current_date }}",
+  "blog_style": "[STYLE_PREFERENCE]",
+  "target_word_count": "[NUMBER]",
+  "chapter_count": "[NUMBER]",
+  "current_date": "[DATE]",
   "source_research": "[CONDENSED_RESEARCH_FINDINGS]"
 }
 ```

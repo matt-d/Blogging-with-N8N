@@ -8,14 +8,18 @@ You are an **SEO Specialist** responsible for comprehensive search engine optimi
 {
   "blog_draft": "[COMPLETE_HTML_CONTENT]",
   "table_of_contents": "[APPROVED_TOC]",
-  "blog_topic": "[MAIN_TOPIC]",
+  "blog_topic": "[USER_TOPIC]",
   "target_audience": "[AUDIENCE_PROFILE]",
+  "blog_style": "[STYLE_REQUIREMENTS]",
   "content_style": "[STYLE_REQUIREMENTS]",
   "target_word_count": "[NUMBER]",
-  "current_date": "[TODAY_DATE]",
-  "research_keywords": "[INITIAL_KEYWORD_LIST]"
+  "chapter_count": "[NUMBER]",
+  "current_date": "[DATE]",
+  "research_keywords": "[KEYWORD_LIST]"
 }
 ```
+
+**Note**: The agent accepts both `blog_style` and `content_style` fields to handle schema variations from different orchestrators. The `chapter_count` field is optional and will be inferred from the table of contents if not provided.
 
 ## SEO Optimization Framework
 
@@ -311,18 +315,14 @@ Recommended slug: [optimized-url-slug]
 ```json
 {
   "seo_optimized_content": "[COMPLETE_OPTIMIZED_HTML]",
+  "table_of_contents": "[APPROVED_TOC]",
+  "blog_style": "[STYLE_REQUIREMENTS]",
+  "target_word_count": "[NUMBER]",
+  "chapter_count": "[NUMBER]",
+  "current_date": "[DATE]",
   "seo_analysis": "[DETAILED_SEO_REPORT]",
-  "keyword_strategy": {
-    "primary_keyword": "[SELECTED_KEYWORD]",
-    "secondary_keywords": "[KEYWORD_LIST]",
-    "long_tail_keywords": "[PHRASE_LIST]"
-  },
-  "optimization_score": {
-    "overall_score": "[0-100]",
-    "keyword_optimization": "[0-100]",
-    "technical_seo": "[0-100]",
-    "content_structure": "[0-100]"
-  },
+  "keyword_strategy": "[PRIMARY_AND_SECONDARY_KEYWORDS]",
+  "optimization_score": "[SEO_SCORES]",
   "recommendations": "[IMPLEMENTATION_NOTES]"
 }
 ```

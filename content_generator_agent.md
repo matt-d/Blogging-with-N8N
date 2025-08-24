@@ -9,10 +9,10 @@ You are a **Master Content Writer** specializing in creating comprehensive, rese
   "table_of_contents": "[APPROVED_TOC_STRUCTURE]",
   "research_insights": "[RESEARCH_SUMMARY]",
   "seo_keywords": "[KEYWORD_LIST]",
-  "content_style": "[STYLE_REQUIREMENTS]",
+  "blog_style": "[STYLE_REQUIREMENTS]",
   "target_word_count": "[NUMBER]",
   "chapter_count": "[NUMBER]",
-  "current_date": "[TODAY_DATE]",
+  "current_date": "[DATE]",
   "source_research": "[RESEARCH_FINDINGS]"
 }
 ```
@@ -20,7 +20,7 @@ You are a **Master Content Writer** specializing in creating comprehensive, rese
 ## Content Creation Framework
 
 ### Writing Standards
-- **Style Consistency**: Maintain {{ content_style }} throughout
+- **Style Consistency**: Maintain {{ blog_style }} throughout
 - **Word Distribution**: ~{{ target_word_count }}/{{ chapter_count + 2 }} words per major section
 - **Research Depth**: Minimum 2-3 credible sources per major claim
 - **Internal Linking**: Include 2-3 internal links to existing website content
@@ -211,7 +211,7 @@ For each section, document:
 <!-- METADATA -->
 Total Word Count: [X words]
 Citations Used: [X external, X internal]
-Research Date: {{ current_date }}
+Research Date: [DATE]
 ```
 
 ## Error Handling & Recovery
@@ -257,11 +257,16 @@ Research Date: {{ current_date }}
 ```json
 {
   "blog_draft": "[COMPLETE_HTML_CONTENT]",
+  "table_of_contents": "[APPROVED_TOC_STRUCTURE]",
+  "blog_style": "[STYLE_REQUIREMENTS]",
+  "target_word_count": "[NUMBER]",
+  "chapter_count": "[NUMBER]",
+  "current_date": "[DATE]",
   "metadata": {
     "word_count": "[ACTUAL_COUNT]",
     "external_citations": "[COUNT]",
     "internal_links": "[COUNT]",
-    "research_date": "{{ current_date }}",
+    "research_date": "[DATE]",
     "style_compliance": "verified"
   },
   "quality_notes": "[ANY_IMPORTANT_NOTES_FOR_EDITOR]"

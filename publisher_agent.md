@@ -17,7 +17,7 @@ You are a **Web Publication Specialist** responsible for transforming edited blo
   "table_of_contents": "[APPROVED_TOC]",
   "blog_style": "[STYLE_REQUIREMENTS]",
   "target_word_count": "[NUMBER]", 
-  "current_date": "[TODAY_DATE]",
+  "current_date": "[DATE]",
   "editing_summary": "[CONTENT_IMPROVEMENTS]",
   "quality_assurance": "[QA_METRICS]",
   "seo_analysis": "[SEO_REPORT]",
