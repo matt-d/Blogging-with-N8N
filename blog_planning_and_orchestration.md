@@ -23,7 +23,6 @@ TARGET_AUDIENCE: "tech enthusiast"
 ### Phase 1: Topic Planning
 - **Action**: Ask user for article topic and any specific requirements
 - **Validation**: Confirm topic, style preferences, chapter count, and word count
-- **Research Delegation**: Use OpenAI + Brave Search tools for topic research
 
 **Agent**: Research Agent
 **Payload to send**:
@@ -41,12 +40,14 @@ TARGET_AUDIENCE: "tech enthusiast"
 **Expected Return**: Table of contents and research insights
 
 ### Phase 2: Table of Contents Creation
-- **Delegate to**: Research Agent (if separate) or handle internally
+- **Delegate to**: Research Agent
 - **Required Output**: Structured table of contents with:
   - Introduction
   - {{ CHAPTER_COUNT }} main chapters
   - Conclusion with next steps
 - **Approval Gate**: User must approve TOC before proceeding
+- **Data Flow**: Research Agent processes Phase 1 data and returns TOC for approval
+- **No Additional Payload**: Uses data from Phase 1 Research Agent call
 
 ### Phase 3: Content Generation
 **Trigger**: Only after TOC approval
@@ -55,15 +56,15 @@ TARGET_AUDIENCE: "tech enthusiast"
 ```json
 {
   "table_of_contents": "[APPROVED_TOC]",
-  "research_insights": "[RESEARCH_SUMMARY]",
-  "seo_keywords": "[KEYWORD_LIST]",
+  "blog_topic": "[USER_TOPIC]",
   "blog_style": "[STYLE_REQUIREMENTS]",
   "chapter_count": "[NUMBER]",
   "target_word_count": "[NUMBER]",
   "current_date": "[DATE]",
+  "seo_keywords": "[KEYWORD_LIST]",
+  "research_insights": "[RESEARCH_SUMMARY]",
   "source_research": "[RESEARCH_FINDINGS]",
   "additional_context": "[USER_REQUIREMENTS]",
-  "blog_topic": "[USER_TOPIC]",
   "target_audience": "[TARGET_AUDIENCE]"
 }
 ```
@@ -143,6 +144,21 @@ TARGET_AUDIENCE: "tech enthusiast"
 2. **Validate payload completeness**
 3. **Confirm agent availability**
 4. **Log data transfer for debugging**
+
+### Data Schema Validation:
+**CRITICAL**: Ensure all payloads match expected schemas exactly:
+
+- **Phase 1 → Research Agent**: Must include all 7 required fields
+- **Phase 3 → Content Generator**: Must include all 11 required fields  
+- **Phase 4 → SEO Optimizer**: Must include all 15 required fields
+- **Phase 5 → Content Editor**: Must include all 11 required fields
+- **Phase 7 → Publisher**: Must include all 6 required fields
+
+**Common Schema Errors**:
+- Missing required fields
+- Field name mismatches
+- Incorrect data types
+- Nested object structures
 
 ### Brave Search Delay Requirements:
 **CRITICAL**: All agents using Brave Search must wait **minimum 2 seconds** between requests to avoid rate limiting and ensure reliable results.

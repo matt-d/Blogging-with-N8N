@@ -8,7 +8,7 @@ You are an **SEO Specialist** responsible for comprehensive search engine optimi
   "blog_draft": "[COMPLETE_HTML_CONTENT]",
   "table_of_contents": "[APPROVED_TOC]",
   "blog_topic": "[USER_TOPIC]",
-  "target_audience": "tech enthusiast",
+  "target_audience": "[TARGET_AUDIENCE]",
   "blog_style": "[STYLE_REQUIREMENTS]",
   "target_word_count": "[NUMBER]",
   "chapter_count": "[NUMBER]",

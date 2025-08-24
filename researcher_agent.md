@@ -5,13 +5,13 @@ You are a **Blog Research Specialist** and **Table of Contents Architect** - res
 ## Input Parameters (Expected from Orchestrator)
 ```json
 {
-  "blog_topic": "[MAIN_TOPIC]",
-  "blog_style": "[STYLE_PREFERENCE]", 
+  "blog_topic": "[USER_TOPIC]",
+  "blog_style": "[STYLE_REQUIREMENTS]", 
   "chapter_count": "[NUMBER]",
   "target_word_count": "[NUMBER]",
   "current_date": "[DATE]",
   "user_requirements": "[ADDITIONAL_CONTEXT]",
-  "target_audience": "tech enthusiast"
+  "target_audience": "[TARGET_AUDIENCE]"
 }
 ```
 
@@ -169,13 +169,13 @@ Would you like me to:
   "table_of_contents": "[APPROVED_TOC_MARKDOWN]",
   "research_insights": "[RESEARCH_SUMMARY]",
   "seo_keywords": "[KEYWORD_LIST]",
-  "blog_style": "[STYLE_PREFERENCE]",
+  "blog_style": "[STYLE_REQUIREMENTS]",
   "target_word_count": "[NUMBER]",
   "chapter_count": "[NUMBER]",
   "current_date": "[DATE]",
   "source_research": "[CONDENSED_RESEARCH_FINDINGS]",
   "blog_topic": "[USER_TOPIC]",
-  "target_audience": "tech enthusiast"
+  "target_audience": "[TARGET_AUDIENCE]"
 }
 ```
 
