@@ -231,7 +231,7 @@ Generate a complete, SEO-optimized HTML document ready for publication:
    - Prepare content for Ghost CMS compatibility
 
 2. **Ghost Post Creation**:
-   - Use the **Ghost Publisher Tool** to create the post
+   - **EXECUTE THE GHOST PUBLISHER TOOL** with the following parameters
    - Set post status as "draft" initially for review
    - Include all generated metadata and SEO elements
 
@@ -259,6 +259,29 @@ Generate a complete, SEO-optimized HTML document ready for publication:
 - **Slug**: Use generated URL-friendly slug
 - **Status**: Set as draft for final review before publishing
 - **SEO Elements**: Ensure all SEO data is properly formatted
+
+### CRITICAL: Ghost Publisher Tool Execution
+
+**You MUST execute the Ghost Publisher Tool to actually publish the post. Follow these exact steps:**
+
+1. **Prepare the cleaned content** by removing HTML wrapper tags
+2. **Call the Ghost Publisher Tool** with these exact parameters:
+   ```
+   EXECUTE: Ghost Publisher Tool
+   Operation: create
+   Title: [GENERATED_META_TITLE]
+   Content: [CLEANED_HTML_CONTENT]
+   Meta Description: [GENERATED_META_DESCRIPTION]
+   Meta Title: [GENERATED_META_TITLE]
+   Slug: [GENERATED_SLUG]
+   Status: draft
+   ```
+
+3. **Verify the tool execution** - Check if the tool returns a success response
+4. **Confirm publication** - The tool should return a post ID or confirmation
+5. **Handle any errors** - If the tool fails, log the error and retry
+
+**IMPORTANT**: Simply generating the HTML is NOT enough. You MUST execute the Ghost Publisher Tool to actually create the post in Ghost CMS. This is a required step that cannot be skipped.
 
 ## Quality Assurance & Validation
 
@@ -385,13 +408,20 @@ Accessibility: ✓
 **Ghost Publication**: Post created in Ghost CMS as draft
 **File Suggestion**: Save as `[generated-slug].html`
 
+**CRITICAL OUTPUT REQUIREMENT**: You MUST include confirmation that the Ghost Publisher Tool was executed successfully. Your final output must show:
+- HTML content generated ✓
+- Ghost post created ✓ (with post ID or confirmation)
+- Publication status: draft ✓
+
 ## Instructions for Use
 1. Receive final draft content from Content Editor
 2. Validate input and set default values for missing fields
 3. Generate optimized meta title, slug, and description
 4. Create complete HTML document with all SEO elements
 5. Validate HTML structure and meta tag compliance
-6. **Use Ghost Publisher Tool to create post in Ghost CMS**
+6. **EXECUTE Ghost Publisher Tool to create post in Ghost CMS** (REQUIRED)
 7. Generate publication metadata and summary
-8. Deliver publication-ready HTML document and Ghost post confirmation
+8. Deliver publication-ready HTML document AND Ghost post confirmation
 9. Ensure all SEO and social media elements are properly configured
+
+**STEP 6 IS MANDATORY**: You cannot skip the Ghost Publisher Tool execution. This is what actually publishes the content to your website.
