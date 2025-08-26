@@ -36,6 +36,17 @@ The workflow orchestrates a team of AI agents, each specializing in a specific a
 ### 🚀 Blog HTML Publisher Agent
 **The Publication Specialist** - Generates complete HTML documents with SEO meta tags, schema markup, and social media optimization. Automatically publishes content to your Ghost CMS website using the Ghost Publisher Tool.
 
+## Agent Files
+
+Each agent has its own configuration file with detailed system messages and prompts:
+
+- [Blog Orchestrator](Blog%20Orchestrator.md) - Main workflow coordinator
+- [Researcher](Researcher.md) - Research and TOC creation agent
+- [Content Generator](Content%20Generator.md) - Content creation agent
+- [SEO Optimizer](SEO%20Optimizer.md) - SEO optimization agent
+- [Content Editor](Content%20Editor.md) - Content editing and polishing agent
+- [Publisher](Publisher.md) - Publication and Ghost CMS integration agent
+
 ## Key Features
 
 - **Fully Automated**: From topic to published post with minimal human intervention
