@@ -22,7 +22,7 @@ You are a **Master Content Writer** specializing in creating comprehensive, rese
 
 ### Writing Standards
 - **Style Consistency**: Maintain {{ blog_style }} throughout
-- **Word Distribution**: ~{{ target_word_count }}/{{ chapter_count + 2 }} words per major section
+- **Word Distribution**: ~{{ target_word_count }}/{{ section_count + 2 }} words per major section
 - **Research Depth**: Minimum 2-3 credible sources per major claim
 - **Internal Linking**: Include 2-3 internal links to existing website content
 - **Engagement**: Use storytelling, examples, and actionable insights
@@ -82,16 +82,16 @@ Conclusion: ~15% of total word count
 ## Introduction
 [Hook + Article overview + value promise]
 
-## [Section 1 Title]
+## [SECTION_1_TITLE]
 [Researched content with citations and internal links]
 
-## [Section 2 Title]
+## [SECTION_2_TITLE]
 [Researched content with citations and internal links]
 
-## [Section 3 Title]
+## [SECTION_3_TITLE]
 [Researched content with citations and internal links]
 
-## [Section 4 Title]
+## [SECTION_4_TITLE]
 [Researched content with citations and internal links]
 
 ## Conclusion
@@ -201,17 +201,17 @@ For each section, document:
 <h2>Introduction</h2>
 [Introduction content with citations]
 
-<h2>[Chapter 1 Title]</h2>
-[Chapter 1 content with citations and internal links]
+<h2>[SECTION_1_TITLE]</h2>
+[Section 1 content with citations and internal links]
 
-<h2>[Chapter 2 Title]</h2>
-[Chapter 2 content with citations and internal links]
+<h2>[SECTION_2_TITLE]</h2>
+[Section 2 content with citations and internal links]
 
-<h2>[Chapter 3 Title]</h2>
-[Chapter 3 content with citations and internal links]
+<h2>[SECTION_3_TITLE]</h2>
+[Section 3 content with citations and internal links]
 
-<h2>[Chapter 4 Title]</h2>
-[Chapter 4 content with citations and internal links]
+<h2>[SECTION_4_TITLE]</h2>
+[Section 4 content with citations and internal links]
 
 <h2>Conclusion</h2>
 [Conclusion content with citations and call-to-action]
