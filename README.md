@@ -6,6 +6,46 @@ A comprehensive AI-powered blogging automation system built with N8N that create
 
 This project demonstrates a complete automated blogging workflow that transforms a simple topic request into a fully published, SEO-optimized blog post. The system uses multiple specialized AI agents working in sequence to handle every aspect of content creation, from initial research to final publication on your Ghost CMS website.
 
+## ⚠️ Important: Model Selection
+
+**Use high token per minute (TPM) models for optimal performance.** The interactions between multiple AI agents will quickly surpass the 30k TPM limit of most standard models. We recommend starting with **ChatGPT 5-mini** which offers a 200k TPM limit, or other high-TPM models to ensure smooth workflow execution without rate limiting interruptions.
+
+### Model Comparison Table
+
+| Model | Token limits | Request and other limits | Batch queue limits |
+|-------|--------------|-------------------------|-------------------|
+| gpt-5 | 30,000 TPM | 500 RPM | 900,000 TPD |
+| gpt-5-mini | 200,000 TPM | 500 RPM | 2,000,000 TPD |
+| gpt-5-nano | 200,000 TPM | 500 RPM | 2,000,000 TPD |
+| gpt-4.1 | 30,000 TPM | 500 RPM | 900,000 TPD |
+| gpt-4.1-mini | 200,000 TPM | 500 RPM | 2,000,000 TPD |
+| gpt-4.1-nano | 200,000 TPM | 500 RPM | 2,000,000 TPD |
+| o3 | 30,000 TPM | 500 RPM | 90,000 TPD |
+| o4-mini | 200,000 TPM | 500 RPM | 2,000,000 TPD |
+| gpt-4o | 30,000 TPM | 500 RPM | 90,000 TPD |
+
+**Key Abbreviations:**
+- **TPM**: Tokens Per Minute
+- **RPM**: Requests Per Minute  
+- **TPD**: Tokens Per Day
+
+### Anthropic Claude Models (Tier 1)
+
+| Model | Maximum requests per minute (RPM) | Maximum input tokens per minute (ITPM) | Maximum output tokens per minute (OTPM) |
+|-------|-----------------------------------|----------------------------------------|------------------------------------------|
+| Claude Opus 4.x* | 50 | 30,000 | 8,000 |
+| Claude Sonnet 4 | 50 | 30,000 | 8,000 |
+| Claude Sonnet 3.7 | 50 | 20,000 | 8,000 |
+| Claude Sonnet 3.5<br>2024-10-22 (deprecated) | 50 | 40,000† | 8,000 |
+| Claude Sonnet 3.5<br>2024-06-20 (deprecated) | 50 | 40,000† | 8,000 |
+| Claude Haiku 3.5 | 50 | 50,000† | 10,000 |
+| Claude Opus 3 (deprecated) | 50 | 20,000† | 4,000 |
+| Claude Haiku 3 | 50 | 50,000† | 10,000 |
+
+**Notes:**
+- *Claude Opus 4.x models are currently in limited access
+- †These models have higher input token limits but are deprecated
+
 ## How It Works
 
 The workflow orchestrates a team of AI agents, each specializing in a specific aspect of content creation. Starting with a user's topic request, the system automatically:
