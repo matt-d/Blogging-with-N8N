@@ -336,7 +336,13 @@ Recommended slug: [optimized-url-slug]
   "seo_analysis": "[DETAILED_SEO_REPORT]",
   "keyword_strategy": "[PRIMARY_AND_SECONDARY_KEYWORDS]",
   "optimization_score": "[SEO_SCORES]",
-  "recommendations": "[IMPLEMENTATION_NOTES]"
+  "recommendations": "[IMPLEMENTATION_NOTES]",
+  "url_slug": "[OPTIMIZED_URL_SLUG]",
+  "meta_description": "[SEO_OPTIMIZED_META_DESCRIPTION]",
+  "seo_optimized_title": "[SEO_OPTIMIZED_TITLE]",
+  "extracted_keywords": "[COMPREHENSIVE_KEYWORD_LIST]",
+  "schema_markup": "[GENERATED_JSON_LD_SCHEMA]",
+  "image_seo_data": "[ALT_TEXT_AND_IMAGE_RECOMMENDATIONS]"
 }
 ```
 
