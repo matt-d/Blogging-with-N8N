@@ -89,6 +89,7 @@ Each agent has its own configuration file with detailed system messages and prom
 - [Publisher](Publisher.md) - Publication and Ghost CMS integration agent
 
 ### Simplified Versions (Recommended for Production)
+- [Blog Orchestrator Simplified](Blog_Orchestrator_Simplified.md) - 61.8% size reduction (249→95 lines)
 - [Researcher Simplified](Researcher_Simplified.md) - 59.1% size reduction (232→95 lines)
 - [Content Generator Simplified](Content_Generator_Simplified.md) - 68.0% size reduction (297→95 lines)
 - [SEO Optimizer Simplified](SEO_Optimizer_Simplified.md) - 73.5% size reduction (358→95 lines)
@@ -133,6 +134,7 @@ For optimal performance, use the **simplified agent versions** which offer:
 - Faster processing and reduced token usage
 - Maintained 100% functionality
 - Clear examples and streamlined workflows
+- Complete agent suite optimization (all 6 agents simplified)
 
 ## Requirements
 
