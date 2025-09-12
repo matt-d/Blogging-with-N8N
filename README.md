@@ -122,7 +122,7 @@ Each agent has its own configuration file with detailed system messages and prom
 
 ## Getting Started
 
-### 🚀 Quick Start with N8N Creator
+### 🚀 Quick Start with N8N Template
 
 **Ready to try it immediately?** Use the pre-built workflow on the N8N Creator platform:
 
