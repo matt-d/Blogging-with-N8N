@@ -185,6 +185,4 @@ This project demonstrates advanced N8N workflow automation and AI agent orchestr
 
 If you find this project helpful, consider supporting the development:
 
-[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-%23FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/christancho)
-
 <a href="https://buymeacoffee.com/christancho" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
