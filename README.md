@@ -180,3 +180,9 @@ MIT License - Feel free to use, modify, and distribute this project.
 ## Contributing
 
 This project demonstrates advanced N8N workflow automation and AI agent orchestration. Contributions and improvements are welcome!
+
+## Support
+
+If you find this project helpful, consider supporting the development:
+
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-%23FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/christancho)
